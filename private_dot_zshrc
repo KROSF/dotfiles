@@ -73,7 +73,7 @@ fi
 
 source "${ZIM_HOME}/init.zsh"
 
-source "$HOME/.aliases.zsh"g
+source "$HOME/.aliases.zsh"
 
 eval "$(zoxide init zsh)"
 
