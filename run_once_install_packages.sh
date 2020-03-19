@@ -13,19 +13,20 @@ $brew fd
 $brew fzf
 $brew git
 $brew github/gh/gh
-$brew jq
 $brew htop
-$brew starship
+$brew jq
 $brew krosf/taps/pam_reattach
 $brew krosf/taps/zoxide
 $brew micro
 $brew node
+$brew starship
 $brew twpayne/taps/chezmoi
 $brew yarn
 
 $cask discord
 $cask docker
 $cask firefox
+$cask FiScript
 $cask font-jetbrains-mono
 $cask font-sourcecodepro-nerd-font
 $cask google-chrome
