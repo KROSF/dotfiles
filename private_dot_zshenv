@@ -1,15 +1,23 @@
-# Start configuration added by Zim install {{{
-#
-# User configuration sourced by all invocations of the shell
-#
-
 # Define Zim location
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
-# }}} End configuration added by Zim install
+
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export EDITOR="micro"
 export LANG=en_US.UTF-8
-export XDG_CONFIG_HOME="$HOME/.config/"
-export ANDROID_SDK_ROOT="/Users/$USER/Library/Android/sdk"
-export PATH="$HOME/.cargo/bin:/usr/local/opt/ruby/bin:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/platform-tools:$PATH"
-export EDITOR="vim"
+
+# Android
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export ANDROID_EMULATOR="$ANDROID_SDK_ROOT/emulator"
+export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK_ROOT/platform-tools"
+
+# Ruby
+export RUBY_PATH="/usr/local/opt/ruby/bin"
+
+path=(
+  $path
+  $ANDROID_SDK_ROOT
+  $ANDROID_EMULATOR
+  $ANDROID_PLATFORM_TOOLS
+  $RUBY_PATH
+)
