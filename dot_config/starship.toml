@@ -1,0 +1,62 @@
+add_newline = false
+
+[git_branch]
+symbol = "\uf418 "
+
+[git_state]
+merge = "\uf419 "
+cherry_pick = "🍒 PICKING"
+revert = "⏪"
+rebase = "🔀"
+
+[git_status]
+prefix = ""
+suffix = ""
+conflicted = "\uf440 "
+ahead = "🚀 "
+behind = "🐢 "
+diverged = "\uf493 "
+untracked = "\uf474 "
+stashed = "\uf472 "
+modified = "\uf459 "
+staged = "\uf457 "
+renamed = "\uf45a "
+deleted = "\uf458 "
+
+[[battery.display]]
+threshold = 5
+style = "bold red"
+
+[[battery.display]]
+threshold = 15
+style = "bold yellow"
+
+[conda]
+disabled = true
+
+[elm]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[haskell]
+disabled = true
+
+[aws]
+disabled = true
+
+[hg_branch]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[crystal]
+disabled = true
+
+[ruby]
+disabled = true
+
+[terraform]
+disabled = true
