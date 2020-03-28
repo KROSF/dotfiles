@@ -21,8 +21,6 @@ export GIT_SCRIPTS="$HOME/.gitscripts"
 # Misc
 export PROJECT_ROOT="$HOME/Development"
 
-export BW_SESSION=`chezmoi secret keyring get --service=bitwarden --user=krosf`
-
 path=(
   $path
   $ANDROID_SDK_ROOT
