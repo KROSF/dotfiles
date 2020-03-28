@@ -14,10 +14,18 @@ export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK_ROOT/platform-tools"
 # Ruby
 export RUBY_PATH="/usr/local/opt/ruby/bin"
 
+# Git
+
+export GIT_SCRIPTS="$HOME/.gitscripts"
+
+# Misc
+export PROJECT_ROOT="$HOME/Development"
+
 path=(
   $path
   $ANDROID_SDK_ROOT
   $ANDROID_EMULATOR
   $ANDROID_PLATFORM_TOOLS
   $RUBY_PATH
+  $GIT_SCRIPTS
 )

@@ -1,0 +1,12 @@
+{{- $email := promptString "email" -}}
+{{- $name := promptString "name" -}}
+{{- $gpg := promptString "gpg key id" -}}
+
+[sourceVCS]
+    autoCommit = true
+[data]
+  email = "{{ $email }}"
+  name = "{{ $name }}"
+  signingkey = "{{ $gpg }}"
+[gpg]
+  recipient = "{{ $gpg }}"
