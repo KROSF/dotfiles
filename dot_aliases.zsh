@@ -31,3 +31,12 @@ alias gpc='git push --set-upstream origin "$(git branch --show-current 2> /dev/n
 
 alias pbc='pbcopy'
 alias pbp='pbpaste'
+
+function gpwd {
+  LC_CTYPE=C command tr -dc ${2:-'[:alnum:]'} < /dev/urandom | command head -c ${1:-32} && print
+}
+
+alias uni="cd $PROJECT_ROOT/github/krosf-university"
+alias wgh="cd $PROJECT_ROOT/github"
+alias o="open"
+alias code.="code ."
