@@ -79,3 +79,4 @@ eval "$(zoxide init zsh)"
 
 eval "$(starship init zsh)"
 
+export BW_SESSION="$(chezmoi secret keyring get --service=bitwarden --user=krosf)"
