@@ -36,6 +36,10 @@ function gpwd {
   LC_CTYPE=C command tr -dc ${2:-'[:alnum:]'} < /dev/urandom | command head -c ${1:-32} && print
 }
 
+function ghrc {
+  gh repo create "$1" --public
+}
+
 alias uni="cd $PROJECT_ROOT/github/krosf-university"
 alias wgh="cd $PROJECT_ROOT/github"
 alias o="open"
