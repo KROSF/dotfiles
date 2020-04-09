@@ -6,7 +6,7 @@ re="^(https|git)(:\/\/|@)([^\/:]+)[\/:]([^\/:]+)\/([a-zA-Z0-9-]+)(\.git)?$"
 
 if [[ $URL =~ $re ]]; then
     host=${BASH_REMATCH[3]%.*}
-    user=${BASH_REMATCH[4]}
-    repo=${BASH_REMATCH[5]}
+    user=${BASH_REMATCH[4],,}
+    repo=${BASH_REMATCH[5],,}
     git clone $URL "${PROJECT_ROOT:-$HOME/.gitget}/$host/$user/$repo"
 fi
