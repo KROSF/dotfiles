@@ -40,9 +40,15 @@ function ghrc {
   gh repo create "$1" --public
 }
 
+function dev {
+  result=$(fzf)
+  z $result
+}
+
 alias uni="cd $PROJECT_ROOT/github/krosf-university"
 alias wgh="cd $PROJECT_ROOT/github"
 alias o="open"
 alias code.="code ."
 alias ip="curl https://ifconfig.me"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
+alias gitzip="git archive HEAD -o ${PWD##*/}.zip"
